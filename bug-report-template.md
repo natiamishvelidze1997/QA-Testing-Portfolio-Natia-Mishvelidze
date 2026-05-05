@@ -23,7 +23,7 @@ Button remains active and can be clicked again
 
 ### **Expected Result:**
 Button should be disabled after successful submission
-Attachment - confidetional!
+**Attachment - confidetional!**
 
 ### **Severity:**
 Medium
