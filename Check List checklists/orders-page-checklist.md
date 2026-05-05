@@ -6,7 +6,6 @@
 * [ ] Page loads without errors
 * [ ] Payments table is visible
 
----
 
 ### 2. Payment sources visibility
 
@@ -19,7 +18,6 @@
   * TBC New
   * TBC Old
 
----
 
 ### 3. Credo transactions
 
@@ -28,21 +26,20 @@
 * [ ] Verify status is correct
 * [ ] Verify date is correct
 
----
 
 ### 4. Ipay transactions
 
 * [ ] Find Ipay records
 * [ ] Verify amount and status are correct
 
----
+
 
 ### 5. Liberty transactions
 
 * [ ] Find Liberty records
 * [ ] Verify all fields are correctly displayed
 
----
+
 
 ### 6. TBC transactions (New / Old)
 
@@ -50,21 +47,21 @@
 * [ ] Verify MerchantPaymentID is displayed
 * [ ] Verify data is correct
 
----
+
 
 ### 7. Search functionality
 
 * [ ] Search by payment source (e.g. “Credo”)
 * [ ] Verify only relevant results are displayed
 
----
+
 
 ### 8. Total amount validation
 
 * [ ] Check total payment amount (if available)
 * [ ] Compare with expected system calculation
 
----
+
 
 ## ❌ Negative Scenarios
 
@@ -73,14 +70,14 @@
 * [ ] Enter incorrect Order ID
 * [ ] System shows “No payments found”
 
----
+
 
 ### 10. Invalid payment source search
 
 * [ ] Enter “FakeBank”
 * [ ] No results should be displayed
 
----
+
 
 ### 11. Empty search field
 
