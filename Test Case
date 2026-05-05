@@ -1,10 +1,11 @@
-## 🧪 Test Cases – Orders Page (Admin Panel)
+# 🧪 Test Cases – Orders Page (Admin Panel)
 
+---
 
+## 🔹 TC-001: Orders page loads successfully
 
-### 🔹 Test Case 1: Verify Orders page loads successfully
-
-**Preconditions:** User is logged in
+**Preconditions:**
+User is logged in
 
 **Steps:**
 
@@ -12,129 +13,106 @@
 2. Navigate to Orders page
 
 **Expected Result:**
-Orders page loads successfully with payments table displayed
+Orders page loads successfully and displays the payments table
 
+**Priority:** High
 
-### 🔹 Test Case 2: Verify all payment sources are displayed
+---
 
-**Preconditions:** User is on Orders page
+## 🔹 TC-002: All payment sources are displayed
+
+**Preconditions:**
+User is on Orders page
 
 **Steps:**
 
 1. Open Orders page
-2. Check payment sources
 
 **Expected Result:**
-Credo, Ipay, Liberty, TBC New, TBC Old payments are displayed in the table
+All payment sources are visible in the table:
 
+* Credo
+* Ipay
+* Liberty
+* TBC New
+* TBC Old
 
+**Priority:** High
 
-### 🔹 Test Case 3: Verify Credo payment data
+---
+
+## 🔹 TC-003: Credo payment data is correct
+
+**Preconditions:**
+User is on Orders page
 
 **Steps:**
 
-1. Search or filter Credo transactions
-2. Open record
+1. Search for Credo transactions
+2. Open a record
 
 **Expected Result:**
 Amount, date, and status are displayed correctly
 
+**Priority:** Medium
 
+---
 
-### 🔹 Test Case 4: Verify Ipay payment data
+## 🔹 TC-004: Search by payment source
 
-**Steps:**
+**Preconditions:**
+User is on Orders page
 
-1. Search Ipay transactions
-2. Open record
-
-**Expected Result:**
-Status and amount are correct
-
-
-
-### 🔹 Test Case 5: Verify Liberty payment data
+**Test Data:** Credo
 
 **Steps:**
 
-1. Find Liberty record
-2. Open details
-
-**Expected Result:**
-All fields are correctly displayed
-
-
-
-### 🔹 Test Case 6: Verify TBC payments data
-
-**Steps:**
-
-1. Search TBC New / TBC Old
-2. Open record
-
-**Expected Result:**
-MerchantPaymentID is displayed and data is correct
-
-
-
-### 🔹 Test Case 7: Verify search by payment source
-
-**Steps:**
-
-1. Enter “Credo” in search field
+1. Enter “Credo” in the search field
+2. Click Search
 
 **Expected Result:**
 Only Credo transactions are displayed
 
+**Priority:** Medium
 
-
-### 🔹 Test Case 8: Verify total payment amount
-
-**Steps:**
-
-1. Check total amount (if available)
-2. Compare with expected system data
-
-**Expected Result:**
-Total amount is calculated correctly
-
-
+---
 
 ## ❌ Negative Test Cases
 
+---
 
+## 🔹 TC-005: Invalid Order ID search
 
-### 🔹 Test Case 9: Invalid Order ID search
+**Preconditions:**
+User is on Orders page
+
+**Test Data:** Invalid Order ID
 
 **Steps:**
 
 1. Enter invalid Order ID
-2. Click search
+2. Click Search
 
 **Expected Result:**
-System shows “No payments found”
+System displays “No payments found”
 
+**Priority:** Medium
 
+---
 
-### 🔹 Test Case 10: Invalid payment source search
+## 🔹 TC-006: Empty search field
+
+**Preconditions:**
+User is on Orders page
 
 **Steps:**
 
-1. Enter “FakeBank” in search field
-
-**Expected Result:**
-No results are displayed
-
-
-
-### 🔹 Test Case 11: Empty search field
-
-**Steps:**
-
-1. Leave search empty
+1. Leave search field empty
 2. Click Search
 
 **Expected Result:**
 All payments are displayed (default view)
 
+**Priority:** Low
 
+---
