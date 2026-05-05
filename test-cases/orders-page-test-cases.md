@@ -1,8 +1,7 @@
 # 🧪 Test Cases – Orders Page (Admin Panel)
 
----
 
-## 🔹 TC-001: Orders page loads successfully
+## 🔹 1: Orders page loads successfully
 
 **Preconditions:**
 User is logged in
@@ -17,9 +16,8 @@ Orders page loads successfully and displays the payments table
 
 **Priority:** High
 
----
 
-## 🔹 TC-002: All payment sources are displayed
+## 🔹 2: All payment sources are displayed
 
 **Preconditions:**
 User is on Orders page
@@ -39,9 +37,9 @@ All payment sources are visible in the table:
 
 **Priority:** High
 
----
 
-## 🔹 TC-003: Credo payment data is correct
+
+## 🔹 3: Credo payment data is correct
 
 **Preconditions:**
 User is on Orders page
@@ -56,9 +54,9 @@ Amount, date, and status are displayed correctly
 
 **Priority:** Medium
 
----
 
-## 🔹 TC-004: Search by payment source
+
+## 🔹 4: Search by payment source
 
 **Preconditions:**
 User is on Orders page
@@ -75,13 +73,12 @@ Only Credo transactions are displayed
 
 **Priority:** Medium
 
----
 
 ## ❌ Negative Test Cases
 
----
 
-## 🔹 TC-005: Invalid Order ID search
+
+## 🔹 5: Invalid Order ID search
 
 **Preconditions:**
 User is on Orders page
@@ -98,9 +95,8 @@ System displays “No payments found”
 
 **Priority:** Medium
 
----
 
-## 🔹 TC-006: Empty search field
+## 🔹 6: Empty search field
 
 **Preconditions:**
 User is on Orders page
